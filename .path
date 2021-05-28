@@ -1,0 +1,6 @@
+export PATH="/usr/local/bin:$PATH"
+
+export ANDROID_HOME=~/Library/Android/sdk/platform-tools
+
+# TODO: Cleanup
+export PATH=~${PATH}:${ANDROID_HOME}

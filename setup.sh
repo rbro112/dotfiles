@@ -15,12 +15,12 @@ function setup() {
 	source ~/.zshrc;
 }
 
-if [ "$1" == "--force" -o "$1" == "-f" ]; then
+if [ "$1" "==" "--force" -o "$1" "==" "-f" ]; then
 	setup;
 else
-	read -p "This may overwrite existing files in your home directory. Are you sure? (y/n) " -n 1;
+	read "yn?This may overwrite existing files in your home directory. Are you sure? (y/n) ";
 	echo "";
-	if [[ $REPLY =~ ^[Yy]$ ]]; then
+	if [[ "$yn" =~ ^[Yy]$ ]]; then
 		setup;
 	fi;
 fi;

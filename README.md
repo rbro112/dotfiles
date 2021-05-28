@@ -2,7 +2,7 @@
 
 Just making this since I'm sick of syncing my profiles everytime I switch computers.
 
-Heavily inspired by https://github.com/mathiasbynens/dotfiles.
+Heavily inspired by https://github.com/mathiasbynens/dotfiles. Modified to work with zsh.
 
 ## Setup
 
