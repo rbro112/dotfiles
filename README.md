@@ -2,6 +2,8 @@
 
 Just making this since I'm sick of syncing my profiles everytime I switch computers.
 
+![Screenshot of prompt](https://imgur.com/a/YDWNHC6)
+
 Heavily inspired by https://github.com/mathiasbynens/dotfiles. Modified to work with zsh.
 
 ## Setup
@@ -19,5 +21,9 @@ source setup.sh
 To update without a confirmation prompt:
 
 ```bash
-set -- -f; source bootstrap.sh
+source setup.sh -f
 ```
+
+## What's custom?
+
+TODO
