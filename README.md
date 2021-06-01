@@ -2,7 +2,7 @@
 
 Just making this since I'm sick of syncing my profiles everytime I switch computers.
 
-![Screenshot of prompt](https://imgur.com/a/YDWNHC6)
+![Screenshot of prompt](https://i.imgur.com/cXkMWl4)
 
 Heavily inspired by https://github.com/mathiasbynens/dotfiles. Modified to work with zsh.
 
@@ -27,3 +27,7 @@ source setup.sh -f
 ## What's custom?
 
 TODO
+
+## Left to do
+
+- Fix bash prompt to not show git info if not in git repo.

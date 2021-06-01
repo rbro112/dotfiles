@@ -6,7 +6,7 @@ alias ...="cd ../.."
 alias ....="cd ../../.."
 alias .....="cd ../../../.."
 alias ~="cd ~" # `cd` is probably faster to type though
-alias -- -="cd -"
+alias -- -="cd -"             
 
 # Shortcuts
 alias d="cd ~/Documents/Dropbox"
@@ -48,3 +48,9 @@ alias egrep='egrep --color=auto'
 
 # Reload the shell (i.e. invoke as a login shell)
 alias reload="exec ${SHELL} -l"
+
+# Always list directory contents upon 'cd'
+cd() { 
+	builtin cd "$@";
+	l;
+}  
