@@ -1,3 +1,8 @@
+# Local/private config goes in the include
+[include]
+	path = ~/.gitconfig.local
+[hub]
+	protocol = https
 [alias]
 
 	# View abbreviated SHA, description, and history graph of the latest 20 commits.
@@ -14,6 +19,8 @@
 
 	# Pull in remote changes for the current repository and all its submodules.
 	p = pull --recurse-submodules
+
+	pbr = push origin HEAD
 
 	# Clone a repository including all submodules.
 	c = clone --recursive
@@ -87,13 +94,9 @@
 
 [color "status"]
 
-	added = yellow
-	changed = green
+	added = green
+	changed = yellow
 	untracked = red
-
-[user]
-	name = Ryan Brooks
-	email = ryanjeffrey.brooks112@gmail.com
 
 [push]
 	default = simple
