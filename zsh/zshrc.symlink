@@ -1,3 +1,4 @@
+#!/bin/zsh
 # shortcut to this dotfiles path is $ZSH
 export ZSH=$HOME/dotfiles
 
@@ -12,6 +13,9 @@ fi
 # all of our zsh files
 typeset -U config_files
 config_files=($ZSH/**/*.zsh)
+
+# Reset the path variable before setting again
+export PATH=/usr/bin:/bin:/usr/sbin:/sbin
 
 # load the path files
 for file in ${(M)config_files:#*/path.zsh}

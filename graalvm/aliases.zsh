@@ -1,0 +1,1 @@
+alias native-image="$GRAALVM_BIN/native-image"
