@@ -1,2 +1,27 @@
 git/gitconfig.local.symlink
 *.local.*
+
+# IntelliJ files
+.idea
+*.iml
+
+### Gradle/Java related
+
+# Java class files
+*.class
+
+# Generated files
+bin/
+gen/
+build/
+
+### Android related (just in case they slip in somehow)
+
+# built application files
+*.apk
+*.aab
+*.ap_
+*.o
+
+# files for the dex VM
+*.dex
