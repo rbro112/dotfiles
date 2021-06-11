@@ -47,7 +47,7 @@ function grename() {
 
 # New Branch
 gnb() {
-    git fetch && git checkout -b ryan-$1 origin/$(git_main_branch);
+    git fetch && git checkout -b rb-$1 origin/$(git_main_branch);
 }
 
 # Aliases in Alphatbetical order. 
