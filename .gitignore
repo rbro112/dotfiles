@@ -15,6 +15,10 @@ bin/
 gen/
 build/
 
+# Gradle
+.gradle
+local.properties
+
 ### Android related (just in case they slip in somehow)
 
 # built application files
