@@ -19,7 +19,7 @@ git_dirty() {
   then
     echo ""
   else
-    if [[ $($git status --porcelain) == "" ]]
+    if [[ $($git status --porcelain -uno) == "" ]]
     then
       echo "on %{$fg_bold[green]%}$(git_prompt_info)%{$reset_color%}"
     else
@@ -58,7 +58,7 @@ directory_name() {
   echo "%{$fg_bold[blue]%}%2~%{$reset_color%}"
 }
 
-export PROMPT=$'\n'"$(user_name) in $(directory_name) $(git_dirty)$(need_push)"$'\n'"› "
+export PROMPT=$'\n$(user_name) in $(directory_name) $(git_dirty)$(need_push)\n› '
 
 set_prompt () {
   export RPROMPT="%{$fg_bold[cyan]%} %{$reset_color%}"
