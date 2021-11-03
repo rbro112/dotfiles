@@ -71,6 +71,7 @@ alias gplum='git pull upstream $(git_main_branch)'
 
 alias gp='git push'
 alias gpu='git push -u'
+alias gpoH='git push origin HEAD'
 
 alias grb='git rebase'
 alias grbm='git rebase $(git_main_branch)'
