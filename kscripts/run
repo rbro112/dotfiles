@@ -1,6 +1,0 @@
-#!/bin/bash
-# Run an application module in this project.
-
-kscriptsDir="$(cd "$(dirname "${BASH_SOURCE[0]}")" >/dev/null 2>&1 && pwd)"
-
-"$kscriptsDir"/exec_helper run "$@"
