@@ -76,7 +76,7 @@ defaults write com.apple.dock show-recents -bool false
 defaults write com.apple.terminal StringEncodings -array 4
 
 # Install the Darcula theme for iTerm
-open "../theme/Darcula.itermcolors"
+open "./theme/Darcula.itermcolors"
 
 ###############################################################################
 # Activity Monitor                                                            #
