@@ -118,3 +118,6 @@
 	smudge = git-lfs smudge -- %f
 	process = git-lfs filter-process
 	required = true
+[user]
+	name = Ryan Brooks
+	email = ryanjeffrey.brooks112@gmail.com

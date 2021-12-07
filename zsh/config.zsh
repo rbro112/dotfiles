@@ -34,3 +34,6 @@ bindkey '^[[5D' beginning-of-line
 bindkey '^[[5C' end-of-line
 bindkey '^[[3~' delete-char
 bindkey '^?' backward-delete-char
+
+# set the number of open files to be 2048, primarily for AOSP
+ulimit -S -n 2048
